@@ -1,6 +1,5 @@
 1. Vá para o console do CodePipeline e `Criar novo pipeline`
 2. De o nome de 'hackathon-CD-app-stack' e clique em próximo
-3. Em origem escolha GitHub e escolha o repositório `Hackaton-project-terraform-stack` da sua conta, conforme o fork do passo 1.
 4. Clique em `Próximo`
    ![](img/cp1.png)
 5. Crie um COdeBuild Identico em configuração ao criado para a fase de CI e utlize o nome `hackathon-app-stack`. Adicione mais uma variavel de ambiente STAGE=prod. Clique em próximo.
@@ -24,10 +23,10 @@
     aws s3 cp ~/.aws/credentials s3://hackathon-fiap-<sua turma em minusculo>-<numero do seu rm>/instance-need/.aws/credentials
     aws s3 cp ~/.ssh/fiap-lab.pem s3://hackathon-fiap-<sua turma em minusculo>-<numero do seu rm>/instance-need/.ssh/fiap-lab.pem
     ```
-15. No IDE navegue até o arquivo `Hackaton-project-terraform-stack/buildspec.yml` e abra.
+15. No IDE navegue até o arquivo `hybridnativecloud-project-terraform-stack/buildspec.yml` e abra.
 16. Altere todos os s3:// do arquivo para colocar o nome do bucket criado por você.
     ![](img/ide1.png)
-17. Agora vá até o arquivo `Hackaton-project-terraform-stack/state.tf` e tambem altere o nome do bucket.
+17. Agora vá até o arquivo `hybridnativecloud-project-terraform-stack/state.tf` e tambem altere o nome do bucket.
 18. Precisamos fazer o commit dessas alterações mas para que o webhook do pipeline não seja acionado vamos desabilitar ele.
 19. Execute o comando `aws codepipeline list-webhooks --endpoint-url "https://codepipeline.us-east-1.amazonaws.com" --region "us-east-1"` no terminal e localize o targetPipeline com o nome do pipeline recem criado.
     ![](img/ter1.png)
