@@ -1,6 +1,6 @@
 1. Vá para o console do CodePipeline e `Criar novo pipeline`
 2. De o nome de 'hackathon-CD-app-stack' e clique em próximo
-4. Clique em `Próximo`
+4. Clique em `Próximo` e escolha o githib e seu projeto `hybridnativecloud-project-terraform-stack`
    ![](img/cp1.png)
 5. Crie um COdeBuild Identico em configuração ao criado para a fase de CI e utlize o nome `hackathon-app-stack`. Adicione mais uma variavel de ambiente STAGE=prod. Clique em próximo.
    ![](img/cb1.png)
