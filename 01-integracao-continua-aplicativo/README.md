@@ -10,7 +10,7 @@
 9.  Coloque o nome no pipeline de `hackathon-CI-app`, deixe as opções como na imagem e clique em próximo:
    ![](img/cp1.png)
 11. Em origem escolha o GitHub e conecte com sua conta como pedido na tela.
-12. No repositório escolha o repositório `Hackaton-project-app` que esta na sua conta ,deixe as demais opções como na imagem e clique me próximo.
+12. No repositório escolha o repositório `hybridnativecloud-project-app` que esta na sua conta ,deixe as demais opções como na imagem e clique me próximo.
     ![](img/cp2.png)
 13. No provedor de compilação escolha 'AWS CodeBuild' e clique em 'Criar Projeto'. Uma janela para criar o projeto irá abrir.
     ![](img/cp3.png)
