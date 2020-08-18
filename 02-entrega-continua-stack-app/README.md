@@ -6,7 +6,7 @@
    ![](img/cb1.png)
 6. Na tela implantação clique em 'Ignorar etapa implantação' e confirme.
 7. Clique em 'Criar Pipeline'
-8.  Assim que voltar a tela do pipeline criado rapidamente clieque em `Interromper a execução`
+8.  Assim que voltar a tela do pipeline criado rapidamente clieque em `Interromper a execução`. Vá até o console do IAM e de a autorização de administrador para a função `hackathon-app-stack` assim como fez com o codebiuld de CI
     ![](img/cp2.png)
 9.  Na tela que abrir deixe as opções como na imagem e clique em interromper:
     ![](img/cp3.png)
